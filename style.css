@@ -819,6 +819,12 @@ body.boxed-v #wrapper {
 	margin-bottom: 76px;
 }
 
+.color-light{
+	color: #fff;
+}
+.price-section .main-heading .heading {
+	color: #fff;
+}
 .main-heading .heading {
 	color: #333;
 	margin: 0 0 18px;
@@ -855,12 +861,12 @@ body.boxed-v #wrapper {
 	position: fixed;
 }
 
-#header.sticky #nav{
+/* #header.sticky #nav{
 	background: #fff;
-}
+} */
 #header.sticky #nav .nav-list {
-	/* border-radius: 0 4px 4px 0; */
-	/* box-shadow: 0 0 10px rgba(0, 0, 0, .1); */
+	border-radius: 0 4px 4px 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 
 #header .nav-opener {
@@ -926,7 +932,13 @@ body.boxed-v #wrapper {
 	margin: 0;
 	font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+#footer .row{
+	display: flex;
+	align-items: center;
+}
+#footer .top-list li {
+	padding: 0 11.8% 0 7%;
+}
 .top-list li {
 	position: relative;
 	padding: 0 8.8% 0 7%;
@@ -1470,16 +1482,21 @@ body.boxed-v #wrapper {
 /*------------------------------------------------------------------
 	12. price section of the page styles / .price-section
 -------------------------------------------------------------------*/
-
+.price-section{
+	background-size: cover;
+    background-attachment: fixed;
+}
 .price-box {
 	background: #fff;
 	border: 1px solid #eee;
+	border-radius: 15px;
+	text-align: center;
 }
 
 .price-box .header {
 	color: #777;
 	font-size: 12px;
-	padding: 30px 10% 33px;
+	padding: 30px 10% 0px;
 }
 
 .price-box .title {
@@ -1492,7 +1509,9 @@ body.boxed-v #wrapper {
 .price-box .price-txt {
 	display: block;
 	font-size: 14px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 14px;
 }
 
 .price-box .price-txt .price {
@@ -1517,7 +1536,7 @@ body.boxed-v #wrapper {
 .price-box .box {
 	line-height: 22px;
 	padding: 38px 9.4%;
-	border-top: 1px solid #eee;
+	/* border-top: 1px solid #eee; */
 }
 
 .price-box .box p {
@@ -1536,7 +1555,7 @@ body.boxed-v #wrapper {
 }
 
 .price-box .order {
-	font: 700 12px/16px "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 700 18px/16px "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*------------------------------------------------------------------
@@ -1575,12 +1594,14 @@ body.boxed-v #wrapper {
 	overflow: hidden;
 	position: relative;
 }
-
-#footer .bottom {
+#footer .bottom p{
+	margin-bottom: 0;
+}
+/* #footer .bottom {
 	margin-top: 30px;
 	padding-top: 21px;
 	border-top: 1px solid #292929;
-}
+} */
 
 .popup-holder {
 	height: 0;
