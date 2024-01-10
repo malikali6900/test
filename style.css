@@ -848,11 +848,43 @@ body.boxed-v #wrapper {
 /*------------------------------------------------------------------
 	5. header of the page styles / #header
 -------------------------------------------------------------------*/
+#header .btn.btn-default:active, #header .btn.btn-default:focus, #header .btn.btn-default:hover{
+	background-color: #ff7400e6 !important;
+}
+#header .btn.btn-default{
+	font-size: 15px;
+    padding: 11px 30px 10px 30px;
+    color: #ffffff;
+}
+.counter-section .row .col-sm-3{
+	text-align: center;
+}
+.counter-section .txt, .counter-section .counter{
+	color: #fff !important;	
+}
+.counter-section .container{
+	background-color: #ff7400;
+	padding: 50px 0px 30px 0px;
+    border-radius: 43px;
+    overflow: visible;
+    margin-top: 20px;
+}
 
+#header li.button{
+	padding: 0 !important;
+}
+#header .row{
+	align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo img{
+	width: 180px;
+}
 #header {
 	z-index: 2;
 	position: relative;
-	padding: 34px 0 70px;
+	padding: 14px 0 14px;
 }
 
 #header.sticky #nav {
@@ -1172,11 +1204,14 @@ body.boxed-v #wrapper {
 /*------------------------------------------------------------------
 	8. quote form of the page styles / .quote-form
 -------------------------------------------------------------------*/
-
+.quote-form, .quote-form .calendly-inline-widget, .quote-form .calendly-inline-widget iframe{
+	border-radius: 15px !important;
+}
 .quote-form {
 	margin: -97px 0;
 	border-radius: 3px;
-	padding: 56px 30px 69px;
+	/* padding: 56px 30px 69px; */
+	padding: 0;
 	background-color: #fff;
 	background-repeat: no-repeat;
 	background-position: -470px -270px;
@@ -1496,7 +1531,7 @@ body.boxed-v #wrapper {
 .price-box .header {
 	color: #777;
 	font-size: 12px;
-	padding: 30px 10% 0px;
+	padding: 50px 10% 0px;
 }
 
 .price-box .title {
@@ -1535,7 +1570,7 @@ body.boxed-v #wrapper {
 
 .price-box .box {
 	line-height: 22px;
-	padding: 38px 9.4%;
+	padding: 38px 9.4% 58px 9.4%;
 	/* border-top: 1px solid #eee; */
 }
 
@@ -1555,7 +1590,7 @@ body.boxed-v #wrapper {
 }
 
 .price-box .order {
-	font: 700 18px/16px "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 700 16px/16px "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*------------------------------------------------------------------
@@ -1790,6 +1825,15 @@ body.boxed-v #wrapper {
 }
 .form-group.selector-overflow .iti--allow-dropdown{
 	width: 100% !important;
+}
+.about-section.pad-top-lg{
+	padding-top: 100px !important;
+}
+.services-section.pad-top-lg{
+	padding-top: 50px !important;
+}
+.about-section.pad-bottom-sm{
+	padding-bottom: 0 !important;
 }
 @media (min-width: 768px) {
 	.commentlist-item .commentlist-item {
